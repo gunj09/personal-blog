@@ -98,7 +98,7 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="relative h-[500px] rounded-2xl overflow-hidden">
-                <Image src="/placeholder.svg?height=500&width=400" alt="Alex Johnson" fill className="object-cover" />
+                <Image src="/placeholder-user.jpg" alt="Alex Johnson" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-900 p-4 rounded-lg shadow-xl">
                 <p className="font-bold">8+ Years</p>

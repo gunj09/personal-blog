@@ -20,7 +20,7 @@ const posts = [
     title: "Building Modern UIs with Aceternity and Framer Motion",
     excerpt: "Learn how to create stunning user interfaces using the latest animation libraries and techniques.",
     category: "Tech",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "April 10, 2025",
     tags: ["React", "Animation", "UI/UX"],
   },
@@ -29,7 +29,7 @@ const posts = [
     title: "My Journey Through the Mountains of Switzerland",
     excerpt: "Exploring the breathtaking landscapes and sharing my experiences hiking through the Swiss Alps.",
     category: "Travel",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "April 5, 2025",
     tags: ["Hiking", "Nature", "Adventure"],
   },
@@ -38,7 +38,7 @@ const posts = [
     title: "The Perfect Homemade Pizza Recipe",
     excerpt: "A step-by-step guide to making restaurant-quality pizza in your own kitchen with simple ingredients.",
     category: "Food",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "March 28, 2025",
     tags: ["Recipes", "Cooking", "Italian"],
   },
@@ -47,7 +47,7 @@ const posts = [
     title: "Finding Balance in a Digital World",
     excerpt: "Strategies for maintaining mental health and wellness while navigating our increasingly connected lives.",
     category: "Lifestyle",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "March 20, 2025",
     tags: ["Wellness", "Mental Health", "Digital Detox"],
   },
@@ -57,7 +57,7 @@ const posts = [
     excerpt:
       "Predictions and insights about upcoming trends and technologies that will shape the web development landscape.",
     category: "Tech",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "March 15, 2025",
     tags: ["Web Dev", "Trends", "Future Tech"],
   },
@@ -67,7 +67,7 @@ const posts = [
     excerpt:
       "Discover lesser-known destinations that offer authentic experiences away from the typical tourist routes.",
     category: "Travel",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg",
     date: "March 8, 2025",
     tags: ["Travel Tips", "Asia", "Off the Beaten Path"],
   },
@@ -243,8 +243,8 @@ export default function Home() {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=160&width=160"
-                    alt="Blogger Avatar"
+                    src="/placeholder-user.jpg"
+                    alt={posts.title}
                     fill
                     className="object-cover"
                   />
@@ -347,7 +347,7 @@ export default function Home() {
                       <div className="group relative h-full overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 transition-all duration-200 hover:shadow-lg">
                         <div className="relative h-48 overflow-hidden">
                           <Image
-                            src={post.image || "/placeholder.svg"}
+                            src="/placeholder.jpg"
                             alt={post.title}
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"

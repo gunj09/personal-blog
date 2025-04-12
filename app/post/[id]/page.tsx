@@ -52,13 +52,13 @@ const posts = [
     `,
     excerpt: "Learn how to create stunning user interfaces using the latest animation libraries and techniques.",
     category: "Tech",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png",
     date: "April 10, 2025",
     tags: ["React", "Animation", "UI/UX"],
     author: {
       name: "Alex Johnson",
       bio: "Frontend developer and UI/UX enthusiast",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-user.jpg",
     },
   },
   {
@@ -95,13 +95,13 @@ const posts = [
     `,
     excerpt: "Exploring the breathtaking landscapes and sharing my experiences hiking through the Swiss Alps.",
     category: "Travel",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png",
     date: "April 5, 2025",
     tags: ["Hiking", "Nature", "Adventure"],
     author: {
       name: "Alex Johnson",
       bio: "Travel enthusiast and outdoor adventurer",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-user.jpg",
     },
   },
   {
@@ -152,13 +152,13 @@ const posts = [
     `,
     excerpt: "A step-by-step guide to making restaurant-quality pizza in your own kitchen with simple ingredients.",
     category: "Food",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png",
     date: "March 28, 2025",
     tags: ["Recipes", "Cooking", "Italian"],
     author: {
       name: "Alex Johnson",
       bio: "Home cook and food enthusiast",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-user.jpg",
     },
   },
   {
@@ -201,13 +201,13 @@ const posts = [
     `,
     excerpt: "Strategies for maintaining mental health and wellness while navigating our increasingly connected lives.",
     category: "Lifestyle",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png",
     date: "March 20, 2025",
     tags: ["Wellness", "Mental Health", "Digital Detox"],
     author: {
       name: "Alex Johnson",
       bio: "Wellness advocate and mindfulness practitioner",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-user.jpg",
     },
   },
   {
@@ -249,13 +249,13 @@ const posts = [
     excerpt:
       "Predictions and insights about upcoming trends and technologies that will shape the web development landscape.",
     category: "Tech",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png",
     date: "March 15, 2025",
     tags: ["Web Dev", "Trends", "Future Tech"],
     author: {
       name: "Alex Johnson",
       bio: "Web developer and technology futurist",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-usesr.jpg",
     },
   },
   {
@@ -305,13 +305,13 @@ const posts = [
     excerpt:
       "Discover lesser-known destinations that offer authentic experiences away from the typical tourist routes.",
     category: "Travel",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder-logo.png ",
     date: "March 8, 2025",
     tags: ["Travel Tips", "Asia", "Off the Beaten Path"],
     author: {
       name: "Alex Johnson",
       bio: "Travel writer and photographer",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder-user.jpg",
     },
   },
 ]
@@ -321,7 +321,7 @@ const sampleComments = [
   {
     id: 1,
     author: "Sarah Miller",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/placeholder.svg",
     content:
       "This is such a helpful article! I've been trying to improve my UI design skills and these tips are exactly what I needed.",
     date: "April 11, 2025",
@@ -330,7 +330,7 @@ const sampleComments = [
       {
         id: 101,
         author: "Alex Johnson",
-        avatar: "/placeholder.svg?height=40&width=40",
+        avatar: "/placeholder.svg",
         content: "Thanks Sarah! I'm glad you found it helpful. Let me know if you have any specific questions.",
         date: "April 11, 2025",
         likes: 3,
@@ -340,7 +340,7 @@ const sampleComments = [
   {
     id: 2,
     author: "David Chen",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/placeholder.svg",
     content:
       "Great insights! I've been using Framer Motion for a while now, but I hadn't tried combining it with Aceternity UI. Will definitely give it a shot.",
     date: "April 10, 2025",
@@ -350,7 +350,7 @@ const sampleComments = [
   {
     id: 3,
     author: "Emily Rodriguez",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/placeholder.svg",
     content:
       "Do you have any recommendations for learning resources for someone just getting started with animation libraries?",
     date: "April 10, 2025",
@@ -359,7 +359,7 @@ const sampleComments = [
       {
         id: 102,
         author: "Alex Johnson",
-        avatar: "/placeholder.svg?height=40&width=40",
+        avatar: "/placeholder.svg",
         content:
           "Hi Emily! The Framer Motion documentation is excellent for beginners. I'd also recommend checking out the Aceternity UI examples and Josh Comeau's CSS animations course.",
         date: "April 10, 2025",
@@ -368,7 +368,7 @@ const sampleComments = [
       {
         id: 103,
         author: "Emily Rodriguez",
-        avatar: "/placeholder.svg?height=40&width=40",
+        avatar: "/placeholder.svg",
         content: "Thanks for the recommendations! I'll check those out.",
         date: "April 10, 2025",
         likes: 2,
@@ -442,7 +442,7 @@ export default function PostPage() {
     const newCommentObj = {
       id: comments.length + 4,
       author: "You",
-      avatar: "/placeholder.svg?height=40&width=40",
+      avatar: "/placeholder.svg",
       content: newComment,
       date: "Just now",
       likes: 0,
